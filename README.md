@@ -1,6 +1,6 @@
 # VBGRAMG MIS Downloads
 
-**Latest Windows release: 0.3.7 — 25 August 2026. Linux remains on 0.3.0.**
+**Latest Windows release: 0.3.8 — 25 August 2026. Linux remains on 0.3.0.**
 
 VBGRAMG MIS is a clean operational workspace for MGNREGA/VBGRAMG reporting, data-quality review, payments, muster rolls, works, tasks, reports, performance analysis, and assisted daily decision-making. The official government portal remains the source of truth.
 
@@ -10,15 +10,15 @@ This is a **downloads-only repository**. The application source code, user data,
 
 | Platform | Version | Package |
 |---|---:|---|
-| Windows 10/11, 64-bit | 0.3.7 | [Download the Windows installer](https://github.com/Changtey/VBGRAMG-MIS/releases/download/v0.3.7/VBGRAMG-MIS-0.3.7-win-x64.exe) |
+| Windows 10/11, 64-bit | 0.3.8 | [Download the Windows installer](https://github.com/Changtey/VBGRAMG-MIS/releases/download/v0.3.8/VBGRAMG-MIS-0.3.8-win-x64.exe) |
 | Linux desktop, 64-bit | 0.3.0 | [Download the portable AppImage](https://github.com/Changtey/VBGRAMG-MIS/releases/download/v0.3.0/VBGRAMG-MIS-0.3.0-linux-x86_64.AppImage) |
 | Debian/Ubuntu, 64-bit | 0.3.0 | [Download the Debian package](https://github.com/Changtey/VBGRAMG-MIS/releases/download/v0.3.0/VBGRAMG-MIS-0.3.0-linux-amd64.deb) |
 
-[View version 0.3.7 and its verification details](https://github.com/Changtey/VBGRAMG-MIS/releases/tag/v0.3.7)
+[View version 0.3.8 and its verification details](https://github.com/Changtey/VBGRAMG-MIS/releases/tag/v0.3.8)
 
 ## Install on Windows
 
-1. Download `VBGRAMG-MIS-0.3.7-win-x64.exe`.
+1. Download `VBGRAMG-MIS-0.3.8-win-x64.exe`.
 2. Open the installer and follow the guided steps.
 3. Keep the suggested installation folder unless your organization requires another location.
 4. Launch **VBGRAMG MIS** from the Start menu or desktop shortcut.
@@ -29,14 +29,17 @@ Windows may show an unknown-publisher warning because this installer is not digi
 
 Linux remains on version 0.3.0 until a separately built and tested release is ready. For the AppImage, mark the downloaded file as executable in its file properties and open it. For Debian or Ubuntu, open the `.deb` file with the system software installer.
 
-## What changed in version 0.3.7
+## What changed in version 0.3.8
 
-- Redesigned navigation and layouts for a cleaner, faster, responsive workspace.
-- Quiet automatic refresh every seven minutes for the selected authorised official area, with visible freshness, retry, and offline recovery.
-- A new **Performance pulse** for targets, achievements, gaps, completion rates, and day/week/month comparisons using absolute and percentage differences.
-- A new **Data Hub** showing real coverage for villages, LGD mapping, muster applications, work orders, person-days, ongoing works, issues, and reports.
-- Application-aware AI questions for person-days, target versus achievement, low-performing areas, earlier-period changes, and pending work.
-- Safer page recovery, reduced repeated information, and one retry for temporary failures on safe read-only requests.
+- Navigation is grouped into **Today**, **Daily work**, **Review & reports**, **Team & setup**, and **Help**.
+- Today guides the MIS Coordinator through official data, problems, work queue, programme monitors, and review/report preparation in the correct order.
+- Quiet automatic refresh runs every seven minutes for the selected authorised official area, with visible freshness, retry, and offline recovery.
+- Performance shows targets, achievements, gaps, and day/week/month changes using absolute and percentage differences where a valid baseline exists.
+- Application-aware AI understands the current screen, available actions, workflow stage, verified role and jurisdiction, official freshness, and private follow-up counts.
+- Privacy-bounded learning records only repeated page and feature choices, remains visible and resettable, and can influence suggestion order only.
+- Database upgrades now use integrity checks, verified backup, post-upgrade validation, and automatic restoration on failure.
+- A desktop recovery screen can restart the local service or open a small redacted diagnostic log.
+- All 18 main workspaces were checked for blank pages, broken routes, and browser errors; desktop and phone-size layouts were visually verified.
 
 CAPTCHA, OTP, login, approval, signature, payment, final issue, and other official actions remain visible and human-controlled. Missing sources are shown as unavailable and are never guessed.
 
@@ -50,10 +53,10 @@ Updates preserve the local database, approved-account settings, saved dashboards
 
 ## Package verification
 
-- Windows installer size: **140,103,067 bytes**
-- Windows installer SHA-256: `d7f5def10ffb4d7154112b49f1dbae3ee0a3531c5a862ac72426a6cdfaa45299`
-- Update map SHA-256: `a9d78a8685d5d220eb1744acc10db1b8550312ac5b0ffeab8c2dd89a63d71253`
-- Update feed SHA-256: `6931f934489829961fc5adfc88705d88223520f986942d6074fb5a8d39b131f4`
+- Windows installer size: **140,134,112 bytes**
+- Windows installer SHA-256: `529098993fb11a6ebfca300e8e82ff5762c810c4343e1b717f95a4c5c7f2d5e3`
+- Update map SHA-256: `5e14657d74d63990064e435f7da7d0db77acb22f98e75d0e1271cfd86fb46214`
+- Update feed SHA-256: `f03b42ea339233e008e8cd951159d8c248a870332198b917d5bb2c212613a87c`
 - Digital signature: **Not signed**
 
 No government department endorsement is implied. VBGRAMG remains the official source of programme records.
@@ -61,4 +64,3 @@ No government department endorsement is implied. VBGRAMG remains the official so
 ## Support
 
 Use the in-application **Help & Support** page to report a problem or request an improvement. Do not attach passwords, OTPs, CAPTCHA answers, Aadhaar numbers, bank details, or other sensitive records.
-
